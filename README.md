@@ -11,7 +11,7 @@ Este proyecto es una aplicación web simple desarrollada en Angular que consume 
 Clona este repositorio en tu máquina local utilizando el siguiente comando en tu terminal:
 
    ```bash
-   git clone
+   git clone https://github.com/EleazarGamezD/RickandMortyTest.git
    ```
 2. **Inglesar a la carpeta del proyecto**
 ```bash
