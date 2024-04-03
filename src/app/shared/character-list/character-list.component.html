@@ -1,0 +1,29 @@
+<div class="contenedor-results">
+  <!-- Card the movies -->
+  <div class="card-container">
+    <div class="card" *ngFor="let character of characters">
+      <!-- Movies image url function-->
+      <div class="card__img"><img [src]="character.image" class="st53"></div>
+      <!-- Movie title-->
+      <div class="card__subtitle">{{character.name}}</div>
+      <!-- Container that has a date and see more button -->
+      <div class="card__wrapper">
+        <div class="card__content">
+          <div
+            class="card__title">{{character.species}}</div>
+
+          <a>
+            <div class="card__icon"> </div>
+          </a>
+        </div>
+        <div class="card__title">{{character.status}}</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<mat-paginator class="mat-paginator" [length]="maxCharacters"
+  [pageSize]="pageSize"
+  (page)="onPageChange($event)"
+  aria-label="Select page">
+</mat-paginator>

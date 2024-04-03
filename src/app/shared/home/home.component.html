@@ -1,0 +1,11 @@
+<div>
+  <h1 class="title">Rick And Morty</h1>
+</div>
+<div class="btn-area">
+  <button mat-raised-button (click)="getCharacters()">Obtener
+    Personajes</button>
+</div>
+<div class="container" *ngIf="getCharactersList"> <app-character-list
+    [characters]="characters"
+    [maxCharacters]="maxCharacters"
+    (pageChanged)="onPageChange($event)"></app-character-list></div>

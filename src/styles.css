@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background: url("https://www.hdwallpaper.nu/wp-content/uploads/2018/11/rick_and_morty-2.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 2fr auto;
+  grid-template-rows: auto 1fr;
+  padding: 0 2rem;
+  gap: 1rem;
+}
+
+app-root {
+  grid-column: 2;
+  grid-row: 2;
+}
