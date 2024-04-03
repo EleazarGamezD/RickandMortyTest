@@ -9,6 +9,7 @@ import { PageEvent } from '@angular/material/paginator';
   styleUrls: ['./character-list.component.css']
 })
 export class CharacterListComponent {
+  //variables e inicializaciones
   pageSize: number = 20
   page = 1
   @Input() characters: SingleCharacter[] = [];
@@ -17,6 +18,12 @@ export class CharacterListComponent {
 
 
 
+  /**
+   * A description of the entire function.
+   *
+   * @param {PageEvent} event - description of parameter
+   * @return {void} description of return value
+   */
   onPageChange(event: PageEvent) {
     this.pageChanged.emit(event.pageIndex + 1);
   }

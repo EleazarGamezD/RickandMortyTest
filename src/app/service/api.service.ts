@@ -11,10 +11,7 @@ export class ApiService {
   urlService: string = environment.api_url;
   constructor(
     private http: HttpClient,
-  ) {
-
-
-  }
+  ) { }
 
 
   /**

@@ -48,7 +48,13 @@ export class HomeComponent {
         this.maxCharacters = data.info.count
       })
   }
-  //manejo de paginador con el evento Next del paginador
+
+  /**
+   * A description of the entire function.
+   *
+   * @param {number} pageIndex - description of parameter
+   * @return {void} description of return value
+   */
   onPageChange(pageIndex: number) {
     console.log('onPageChange', pageIndex);
     this.loadCharacters(pageIndex);
