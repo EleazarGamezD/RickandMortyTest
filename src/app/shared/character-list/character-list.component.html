@@ -1,12 +1,12 @@
 <div class="contenedor-results">
-  <!-- Card the movies -->
+  <!-- Card the charaxters -->
   <div class="card-container">
     <div class="card" *ngFor="let character of characters">
-      <!-- Movies image url function-->
+      <!--  image url function-->
       <div class="card__img"><img [src]="character.image" class="st53"></div>
-      <!-- Movie title-->
+      <!-- character name -->
       <div class="card__subtitle">{{character.name}}</div>
-      <!-- Container that has a date and see more button -->
+      <!-- Container that has a date and see more button don't work  -->
       <div class="card__wrapper">
         <div class="card__content">
           <div
@@ -22,7 +22,7 @@
   </div>
 </div>
 
-<mat-paginator class="mat-paginator" [length]="maxCharacters"
+ <mat-paginator class="mat-paginator" [length]="maxCharacters"
   [pageSize]="pageSize"
   (page)="onPageChange($event)"
   aria-label="Select page">
