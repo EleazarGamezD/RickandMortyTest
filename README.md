@@ -17,7 +17,7 @@ Clona este repositorio en tu máquina local utilizando el siguiente comando en t
 ```bash
 cd /rickandmortytest
 ```
-3. ** Ejecutar el proyecto**
+3. **Ejecutar el proyecto**
 ```bash
 ng serve 
 ```
